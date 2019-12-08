@@ -3,6 +3,8 @@ package com.example.copingapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,7 +29,13 @@ public class quotes extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quotes);
-        getQuote();
+        Button quoteButton = findViewById(R.id.quoteButton);
+        quoteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getQuote();
+            }
+        });
     }
 
     public void getQuote() {
@@ -35,14 +43,18 @@ public class quotes extends AppCompatActivity {
 
         // Instantiate the RequestQueue.
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url ="https://dog.ceo/api/breeds/image/random";
+        String url ="https://quote-garden.herokuapp.com/quotes/random";
 
         // Request a string response from the provided URL.
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null,
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
-                        textView.setText("Response is: "+ response.toString());
+                        try {
+                            textView.setText(response.get("quoteText").toString());
+                        } catch(Exception e) {
+                            textView.setText("Uh oh!");
+                        }
                     }
                 }, new Response.ErrorListener() {
             @Override
