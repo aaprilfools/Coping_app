@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Coping app</string>
+    <string name="title_activity_quotes">Quotes</string>
+    <string name="title_activity_dog_pics">dogPics</string>
+    <string name="title_activity_jokes">jokes</string>
+    <string name="title_activity_activities">activities</string>
+    <color name="blue">#8cc8ed</color>
+</resources>

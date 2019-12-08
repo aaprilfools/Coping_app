@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/quotes"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="runQuotes"
+        android:text="@string/title_activity_quotes"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape"
+        android:fontFamily="@font/jack_input"/>
+
+    <Button
+        android:id="@+id/dogPics"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="runDogs"
+        android:text="Dogs"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape"
+        android:fontFamily="@font/jack_input"/>
+
+    <Button
+        android:id="@+id/jokes"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="runJokes"
+        android:text="@string/title_activity_jokes"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape"
+        android:fontFamily="@font/jack_input"/>
+
+    <Button
+        android:id="@+id/activities"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="runActivities"
+        android:text="@string/title_activity_activities"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape"
+        android:fontFamily="@font/jack_input"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+</LinearLayout>
