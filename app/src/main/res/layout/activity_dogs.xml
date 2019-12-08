@@ -10,17 +10,25 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
+        android:gravity="center_horizontal|top"
         android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
 
         <Button
             android:id="@+id/dogButton"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="Click here for dogs!"
             android:layout_margin="5dp"
             android:background="@drawable/shape"
-            android:fontFamily="@font/jack_input"/>
+            android:fontFamily="@font/jack_input"
+            android:text="Click here for dogs!" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
 
         <ImageView
             android:id="@+id/imageView"

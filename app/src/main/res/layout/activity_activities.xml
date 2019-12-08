@@ -4,19 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/blue"
     tools:context=".activities">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
+        android:gravity="center_horizontal|top"
         android:orientation="vertical">
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <Button
+            android:id="@+id/activitiesButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/shape"
+            android:fontFamily="@font/jack_input"
+            android:text="Try a new activity!" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/activityText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="activities here" />
+            android:fontFamily="@font/jack_input"
+            android:gravity="center" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
