@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
+    android:background="@color/lime"
     tools:context=".dogs">
 
     <LinearLayout
@@ -24,7 +24,8 @@
             android:layout_margin="5dp"
             android:background="@drawable/shape"
             android:fontFamily="@font/jack_input"
-            android:text="Click here for dogs!" />
+            android:text="Click here for dogs!"
+            android:textColorHighlight="#2196F3" />
 
         <Space
             android:layout_width="match_parent"

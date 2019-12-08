@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
+    android:background="@color/mint"
     tools:context=".activities">
 
     <LinearLayout
@@ -24,7 +24,8 @@
             android:layout_margin="5dp"
             android:background="@drawable/shape"
             android:fontFamily="@font/jack_input"
-            android:text="Try a new activity!" />
+            android:text="Try a new activity!"
+            android:textColorHighlight="#2196F3" />
 
         <Space
             android:layout_width="match_parent"

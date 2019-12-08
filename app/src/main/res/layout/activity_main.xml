@@ -3,54 +3,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="bottom"
-    android:orientation="vertical"
     android:background="@color/blue"
+    android:gravity="bottom|center_horizontal"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cream_candy"
+        android:gravity="center"
+        android:text="Mental Vacation"
+        android:textColor="#414B5E"
+        android:textSize="100sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
 
     <Button
         android:id="@+id/quotes"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:onClick="runQuotes"
-        android:text="@string/title_activity_quotes"
         android:layout_margin="5dp"
         android:background="@drawable/shape"
-        android:fontFamily="@font/jack_input"/>
+        android:fontFamily="@font/jack_input"
+        android:onClick="runQuotes"
+        android:text="@string/title_activity_quotes"
+        android:textColorHighlight="#2196F3" />
 
     <Button
         android:id="@+id/dogPics"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:onClick="runDogs"
-        android:text="Dogs"
         android:layout_margin="5dp"
         android:background="@drawable/shape"
-        android:fontFamily="@font/jack_input"/>
+        android:fontFamily="@font/jack_input"
+        android:onClick="runDogs"
+        android:text="Dogs"
+        android:textColorHighlight="#2196F3" />
 
     <Button
         android:id="@+id/jokes"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:onClick="runJokes"
-        android:text="@string/title_activity_jokes"
         android:layout_margin="5dp"
         android:background="@drawable/shape"
-        android:fontFamily="@font/jack_input"/>
+        android:fontFamily="@font/jack_input"
+        android:onClick="runJokes"
+        android:text="@string/title_activity_jokes"
+        android:textColorHighlight="#2196F3" />
 
     <Button
         android:id="@+id/activities"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:onClick="runActivities"
-        android:text="@string/title_activity_activities"
         android:layout_margin="5dp"
         android:background="@drawable/shape"
-        android:fontFamily="@font/jack_input"/>
+        android:fontFamily="@font/jack_input"
+        android:onClick="runActivities"
+        android:text="@string/title_activity_activities"
+        android:textColorHighlight="#2196F3" />
 
     <Space
         android:layout_width="match_parent"
